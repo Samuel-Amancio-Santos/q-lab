@@ -1,9 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import meter1 from '../assets/img/meter1.svg'
-import meter2 from '../assets/img/meter2.svg'
-import meter3 from '../assets/img/meter3.svg'
 import colorSharp from '../assets/img/color-sharp.png'
 
 export const Skills = () => {
@@ -41,19 +38,19 @@ export const Skills = () => {
                             <p>orem Ipsum is simply dummy text of the printing <br></br> orem Ipsum is simply dummy text of the printing and typesetting industr and typesetting industr, orem Ipsum is simply </p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
-                                    <h3>Demostrações</h3>
+                                     { <h3>Demostrações 1</h3>/* tag só para demonstração depois trocar  */}
                                     <p></p>
                                 </div>
                                 <div className="item">
-                                    <h3>Demostrações</h3>
+                                   { <h3>Demostrações 2</h3> /* tag só para demonstração depois trocar  */}
                                     <p></p>
                                 </div>
                                 <div className="item">
-                                    <h3>Demostrações</h3>
+                                { <h3>Demostrações 3</h3> /* tag só para demonstração depois trocar  */}
                                     <p></p>
                                 </div>
                                 <div className="item">
-                                    <h3>Demostrações</h3>
+                                { <h3>Demostrações 4</h3> /* tag só para demonstração depois trocar  */}
                                     <p>Demo</p>
                                 </div>
 
