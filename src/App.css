@@ -58,6 +58,10 @@ nav.navbar a.navbar-brand {
     width: 9%;
 }
 
+.navbar-brand h1 {
+  color: #dee2e6;
+}
+
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
@@ -230,7 +234,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 96%;
 }
 .banner button {
-  color: #fff;
+  color: #1a1a1a;
   font-weight: 700;
   font-size: 20px;
   margin-top: 60px;
@@ -247,20 +251,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner button:hover svg {
   margin-left: 25px;
 }
-.banner img {
-  animation: updown 3s linear infinite;
-}
-@keyframes updown {
-    0% {
-        transform: translateY(-20px);
-    }
-    50% {
-        transform: translateY(20px);
-    }
-    100% {
-        transform: translateY(-20px);
-    }
-}
+
+
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;
 }

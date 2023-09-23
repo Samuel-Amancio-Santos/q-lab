@@ -7,7 +7,7 @@ import HeaderImg from "../assets/img/header-img.svg"
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Web Developer", "Web Designer", "UI/UX Designer"];
+    const toRotate = ["Company"];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const period = 2000;
@@ -47,15 +47,12 @@ export const Banner = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
-                        <span className="tagLine">Welcome to my portifolio</span>
-                        <h1>{`Hi I'm webdecoded`}<span className="wrap">{text}</span></h1>
+                        <span className="tagLine">Bem-Vindo ao portifolio da</span>
+                        <h1>{`Q-LAB `}<span className="wrap">{text}</span></h1>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-                        <button onClick={() => console.log('connect')}>Let´s connect <ArrowRightCircle size={25} /> </button>
+                        <button onClick={() => console.log('connect')}>Entre em Contato <ArrowRightCircle size={25} /> </button>
                     </Col>
-                    <Col xs={12} md={6} xl={5}>
-                        <img src={HeaderImg} alt="Headder Img" />
-
-                    </Col>
+               
                 </Row>
             </Container>
         </section>
