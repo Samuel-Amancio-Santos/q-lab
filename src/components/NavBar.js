@@ -50,7 +50,8 @@ export const NavBar = () => {
                 <a href='#'>< img src={navIcon2}  alt=""/></a>
                 <a href='#'>< img src={navIcon3}  alt=""/></a>
              </div>
-             <button className='vvd' onClick={() => console.console.log('connect')}><span>Entre em Contato</span> </button>
+             <button className='vvd' onClick={() => console.console.log('connect')}><span>Inscreva-se</span> </button>
+             <button className='vvd' onClick={() => console.console.log('connect')}><span>login</span> </button>
           </span> 
         </Navbar.Collapse>
       </Container>
