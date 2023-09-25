@@ -135,7 +135,7 @@ span.navbar-text {
   width: 0%;
   height: 100%;
   position: absolute;
-  background-color: #fff;
+  background-color: #ffffff;
   left: 0;
   top: 0;
   z-index: -1;
@@ -299,4 +299,30 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   bottom: 0;
   width: 40%;
   z-index: -4;
+}
+
+
+/************ Newsletter ************/
+
+.newsletter {
+  padding: 50px 0 50px 0;
+  position: relative;
+}
+.newsletter-bx {
+  background: #151515;
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
+  margin-top: -60px;
+}
+
+.newsletter h2 {
+	font-size: 45px;
+	font-weight: 700;
+}
+.newsletter p {
+    color: #B8B8B8;
+    font-size: 18px;
+    line-height: 1.5em;
+    margin: 14px 0 75px 0;
 }
