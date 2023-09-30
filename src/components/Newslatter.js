@@ -1,6 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap"
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
@@ -43,7 +42,7 @@ export const Newsletter = () => {
                         <Carousel responsive={responsive} infinite={true} className="newsletter-slider">
 
                         <div className="item-newsl">
-                                <img src={projImg1} alt="Image" />
+                                <img src={projImg1} alt="Image" className="img-fluid" />
                                 <h5>Web Development</h5>
                                 <p> text text text text text text text text
                                 text text text text text text text text text text
@@ -51,7 +50,7 @@ export const Newsletter = () => {
                                 </p>
                             </div>
                             <div className="item-newsl">
-                                <img src={projImg2} alt="Image" />
+                                <img src={projImg2} alt="Image" className="img-fluid" />
                                 <h5>Brand Identity</h5>
                                 <p> text text text text text text text text
                                 text text text text text text text text text text
@@ -59,7 +58,7 @@ export const Newsletter = () => {
                                 </p>
                             </div>
                             <div className="item-newsl">
-                                <img src={projImg3} alt="Image" />
+                                <img src={projImg3} alt="Image" className="img-fluid" />
                                 <h5>Logo Design</h5>
                                 <p> text text text text text text text text
                                 text text text text text text text text text text
