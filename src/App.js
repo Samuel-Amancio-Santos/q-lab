@@ -8,6 +8,7 @@ import { Newsletter } from './components/Newslatter';
 import { Contact } from './components/Contact';
 
 import 'bootstrap/dist/css/bootstrap.min.css'
+import { Footer } from './components/Footer';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Newsletter />
         <Time />
         <Contact />
+        <Footer />
     </div>
   );
 }
