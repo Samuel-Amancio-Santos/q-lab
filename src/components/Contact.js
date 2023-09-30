@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
 
@@ -23,26 +23,6 @@ export const Contact = () => {
         })
     }
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setButtonText("Sending...");
-        let response = await fetch("http://localhost:3000/contact", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json;charset=utf-8",
-          },
-          body: JSON.stringify(formDetails),
-        });
-        setButtonText("Send");
-        let result = await response.json();
-        setFormDetails(formInitialDetails);
-        if (result.code == 200) {
-          setStatus({ succes: true, message: 'Message sent successfully'});
-        } else {
-          setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
-        }
-      };
-
      return (
         <section className="contact" id="connect">
             <Container>
@@ -52,7 +32,7 @@ export const Contact = () => {
                     </Col>
                     <Col md={6}>
                         <h2>Entre em Contato</h2>
-                        <form onSubmit={handleSubmit} > 
+                        <form> 
                             <Row>
                                 <Col sm={6} className="px-1">
                                     <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate ('firstName', e.target.value)} />

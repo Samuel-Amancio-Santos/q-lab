@@ -361,7 +361,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /*********CONTACT***************/
 
 .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  background: rgb(63,0,79);
+  background: linear-gradient(0deg, rgba(63,0,79,1) 0%, rgba(0,0,0,1) 0%, rgba(98,0,128,1) 55%, rgba(98,0,128,1) 56%, rgba(0,0,0,0) 100%, rgba(0,0,0,1) 100%); 
   padding: 60px 0 200px 0;
 }
 .contact img {
