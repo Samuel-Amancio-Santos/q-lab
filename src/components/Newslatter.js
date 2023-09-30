@@ -1,5 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap"
-
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
