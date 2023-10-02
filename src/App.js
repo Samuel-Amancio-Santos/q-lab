@@ -1,27 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import './UltimasNewsletter.css';
 import { NavBar } from './components/NavBar';
-import { Banner } from './components/Banner'
-import { Time } from './components/Time'
-import { Skills } from './components/Skills';
-import { Newsletter } from './components/Newslatter';
-import { Contact } from './components/Contact';
-
+import { BrowserRouter, Routes, Route, Router } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Footer } from './components/Footer';
+import DemoPage from './components/pages/DemoPage';
+import HomePage from './components/pages/HomePage';
 
 
 function App() {
   return (
-    <div className="App">
-        <NavBar />
-        <Banner />
-        <Skills />
-        <Newsletter />
-        <Time />
-        <Contact />
-        <Footer />
-    </div>
+    <BrowserRouter>
+      <div className="App">
+         <NavBar />
+         <Routes>
+              <Route path='/homepage' element={<HomePage/>}></Route>
+              <Route path='/demopage' element={<DemoPage/>}></Route>
+         </Routes>
+
+      </div>
+    </BrowserRouter>
+ 
   );
 }
 
