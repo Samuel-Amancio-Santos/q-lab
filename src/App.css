@@ -436,6 +436,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /* ======== FOOTER =========== */
 
+.footer {
+  background-color: black;
+}
+
 .footer p {
   font-weight: 400;
   font-size: 14px;
