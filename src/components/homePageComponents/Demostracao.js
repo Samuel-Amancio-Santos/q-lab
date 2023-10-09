@@ -1,9 +1,9 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import colorSharp from '../assets/img/color-sharp.png'
+import colorSharp from '../../assets/img/color-sharp.png'
 
-export const Skills = () => {
+export const Demostracao = () => {
 
     const responsive = {
         superLargeDesktop: {

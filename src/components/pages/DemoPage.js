@@ -1,10 +1,12 @@
 
-import { Newsletter } from "../Newsletter";
+import '../demoComponents/demostracao.css';
+import DemoSection from "../demoComponents/DemoSection";
+
 
 
 function DemoPage () {
     return (
-        <></>
+           <DemoSection/>
     )
 }
 

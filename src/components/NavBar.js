@@ -21,7 +21,8 @@ export const NavBar = () => {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="me-auto">
           <Nav.Link href="/homepage" className="navbar-link">Home</Nav.Link>
-          <Nav.Link href="/demopage" className="navbar-link">Demo</Nav.Link>
+          <Nav.Link href="/demopage" className="navbar-link">Demostração</Nav.Link>
+          <Nav.Link href="/newsletterpage" className="navbar-link">Newsletter</Nav.Link>
 
         </Nav>
         <span className='navbar-text'>

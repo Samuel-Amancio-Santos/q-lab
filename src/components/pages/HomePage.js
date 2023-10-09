@@ -1,18 +1,18 @@
 import React from "react";
 import { NavBar } from '../NavBar';
-import { Banner } from '../Banner'
-import { Time } from '../Time'
-import { Skills } from '../Skills';
-import { Newsletter } from '../Newsletter';
-import { Contact } from '../Contact';
+import { Banner } from '../homePageComponents/Banner'
+import { Time } from '../homePageComponents/Time'
+import { Newsletter } from '../homePageComponents/Newsletter';
+import { Contact } from '../homePageComponents/Contact';
 import { Footer } from '../Footer';
+import { Demostracao } from "../homePageComponents/Demostracao";
 
 function HomePage () {
     return (
         <div>
          <NavBar />
          <Banner />
-         <Skills />
+         <Demostracao />
          <Newsletter />
          <Time />
          <Contact />
