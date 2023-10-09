@@ -5,6 +5,8 @@ import { BrowserRouter, Routes, Route, Router } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import DemoPage from './components/pages/DemoPage';
 import HomePage from './components/pages/HomePage';
+import NewsletterPage from './components/pages/NewsletterPage';
+
 
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
           <Route path='/' element={<HomePage />}></Route>
           <Route path='/homepage' element={<HomePage />}></Route>
           <Route path='/demopage' element={<DemoPage />}></Route>
+          <Route path='/newsletterpage' element={<NewsletterPage />}></Route>
         </Routes>
 
       </div>
