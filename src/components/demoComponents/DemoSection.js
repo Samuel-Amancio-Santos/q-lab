@@ -7,8 +7,9 @@ const DemoSection = () => {
 
   return (
     <section className="demo">
-        <h1>Nossas Demostrações</h1>
+        
     <Container className='demo-bx'>
+        <h1>Nossas Demostrações</h1>
       <Row>
         <Col className='demo-item'>
         

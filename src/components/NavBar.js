@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import { useState, useEffect } from "react";
 import { Link, BrowserRouter } from "react-router-dom";
 
 import logo from '../assets/img/logo.svg';
@@ -8,6 +9,7 @@ import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 
 export const NavBar = () => {
+
 
  return (
   <Navbar expand="lg" className="scrolled">
