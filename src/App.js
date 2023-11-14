@@ -8,7 +8,6 @@ import HomePage from './components/pages/HomePage';
 import NewsletterPage from './components/pages/NewsletterPage';
 
 
-
 function App() {
   return (
     
