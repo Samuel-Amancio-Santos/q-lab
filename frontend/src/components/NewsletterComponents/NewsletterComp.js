@@ -12,8 +12,8 @@ const NewsletterComp = () => {
       <Carousel.Item>
         <img src={noticia01} className="carousel-img"/>
         <Carousel.Caption className="text-carousel">
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3 className="text-fluid" >First slide label</h3>
+          <p className="text-md" >Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>

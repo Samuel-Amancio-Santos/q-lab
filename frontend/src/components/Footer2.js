@@ -4,16 +4,16 @@ import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 
-export const Footer = () => {
+export const Footer2 = () => {
     return (
-        <footer className="footer">
+        <footer className="footer2">
         <Container>
           <Row className="align-items-center">
             <Col size={12} sm={6}>
               <h2>Q-LAB</h2>
             </Col>
             <Col size={12} sm={6} className="text-center text-sm-end">
-            <div className="social-iconFooter">
+            <div className="social-iconFooter2">
               <div className="social-icon">
                 <a href="#"><img src={navIcon1} alt="Icon" /></a>
                 <a href="#"><img src={navIcon2} alt="Icon" /></a>
@@ -28,4 +28,4 @@ export const Footer = () => {
     )
 }
 
-export default Footer;
+export default Footer2;

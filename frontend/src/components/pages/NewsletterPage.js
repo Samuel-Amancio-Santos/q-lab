@@ -1,3 +1,4 @@
+import Footer2 from "../Footer2"
 import NewsletterCards from "../NewsletterComponents/NewsletterCards"
 import NewsletterComp from "../NewsletterComponents/NewsletterComp"
 import '../NewsletterComponents/NewsletterComp.css'
@@ -11,6 +12,7 @@ function NewsletterPage () {
      <>
          <NewsletterComp />
          <NewsletterCards />
+         <Footer2 />
      </>
     )
 }

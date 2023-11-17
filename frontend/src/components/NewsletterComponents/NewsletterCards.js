@@ -23,7 +23,7 @@ const NewsletterCards = () => {
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </Card.Text>
-            <Button variant="primary">Ler mais</Button>
+            <button>Ler mais</button>
           </Card.Body>
         </Card>
       </Col>
@@ -37,7 +37,7 @@ const NewsletterCards = () => {
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </Card.Text>
-            <Button variant="primary">Ler mais</Button>
+            <button>Ler mais</button>
           </Card.Body>
         </Card>
       </Col>
@@ -51,13 +51,12 @@ const NewsletterCards = () => {
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </Card.Text>
-            <Button variant="primary">Ler mais</Button>
+            <button>Ler mais</button>
           </Card.Body>
         </Card>
       </Col>
     </Row>
   </Container>     
-  <img className="background-image-left" src={colorSharp} />
 </section>
   );
 }
