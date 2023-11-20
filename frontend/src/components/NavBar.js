@@ -33,8 +33,14 @@ export const NavBar = () => {
             <a href='#'>< img src={navIcon2}  alt=""/></a>
             <a href='#'>< img src={navIcon3}  alt=""/></a>
           </div>
-          <button className='vvd'><span>Inscreva-se</span> </button>
-          <button className='vvd'><span>login</span> </button>
+          <Link to="../inscrição">
+              <button className='vvd'><span>Inscreva-se</span></button>
+            </Link>
+
+          <Link to="../login">
+              <button className='vvd'><span>Login</span></button>
+            </Link>
+
         </span> 
       </Navbar.Collapse>
     </Container>

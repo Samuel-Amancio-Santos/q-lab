@@ -2,8 +2,26 @@ import { Col, Container, Row } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import colorSharp from '../../assets/img/color-sharp.png'
+import SyntaxHighlighter from 'react-syntax-highlighter';
+import { atelierDuneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 export const Demostracao = () => {
+
+  const codeString = `
+  #imports
+
+  from braket.circuits import Circuit
+  
+  from braket.aws import AwsDevice
+  
+  
+  #hello many worlds
+  
+  circ = Circuit()
+  
+  circ.h(1)
+  
+  circ.cnot(control=1, target=0)`;
 
     const responsive = {
         superLargeDesktop: {
@@ -38,20 +56,36 @@ export const Demostracao = () => {
                             <p>orem Ipsum is simply dummy text of the printing <br></br> orem Ipsum is simply dummy text of the printing and typesetting industr and typesetting industr, orem Ipsum is simply </p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
-                                     { <h3>Demostrações 1</h3>/* tag só para demonstração depois trocar  */}
-                                    <p></p>
+                                <SyntaxHighlighter className="codeDemo"
+                             language="python"
+                             style={atelierDuneDark}
+                               showLineNumbers  >
+                               {codeString}
+                           </SyntaxHighlighter>
                                 </div>
                                 <div className="item">
-                                   { <h3>Demostrações 2</h3> /* tag só para demonstração depois trocar  */}
-                                    <p></p>
+                                <SyntaxHighlighter className="codeDemo"
+                             language="python"
+                             style={atelierDuneDark}
+                               showLineNumbers  >
+                               {codeString}
+                           </SyntaxHighlighter>
                                 </div>
                                 <div className="item">
-                                { <h3>Demostrações 3</h3> /* tag só para demonstração depois trocar  */}
-                                    <p></p>
+                                <SyntaxHighlighter className="codeDemo"
+                             language="python"
+                             style={atelierDuneDark}
+                               showLineNumbers  >
+                               {codeString}
+                           </SyntaxHighlighter>
                                 </div>
                                 <div className="item">
-                                { <h3>Demostrações 4</h3> /* tag só para demonstração depois trocar  */}
-                                    <p>Demo</p>
+                                <SyntaxHighlighter className="codeDemo"
+                             language="python"
+                             style={atelierDuneDark}
+                               showLineNumbers  >
+                               {codeString}
+                           </SyntaxHighlighter>
                                 </div>
 
                             </Carousel>

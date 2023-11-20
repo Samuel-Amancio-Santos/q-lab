@@ -1,33 +1,13 @@
 import { Col, Container, Row } from "react-bootstrap"
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-import projImg1 from "../../assets/img/project-img1.png";
-import projImg2 from "../../assets/img/project-img2.png";
-import projImg3 from "../../assets/img/project-img3.png";
+import noticia01 from "../../assets/img-qlab/noticia01.png";
+import noticia02 from "../../assets/img-qlab/noticia02.png";
+import noticia03 from "../../assets/img-qlab/noticia03.png";
+import Carousel from 'react-bootstrap/Carousel';
+
 
 export const Newsletter = () => {
 
-    const responsive = {
-        superLargeDesktop: {
-          // the naming can be any, depends on you.
-          breakpoint: { max: 4000, min: 3000 },
-          items: 2
-        },
-        desktop: {
-          breakpoint: { max: 3000, min: 1024 },
-          items: 2
-        },
-        tablet: {
-          breakpoint: { max: 1024, min: 464 },
-          items: 1
-        },
-        mobile: {
-          breakpoint: { max: 464, min: 0 },
-          items: 1
-        }
-      };
 
-    
 
 
     return (
@@ -40,33 +20,33 @@ export const Newsletter = () => {
                         <h2>
                             Newslatter
                         </h2>
-                        <Carousel responsive={responsive} infinite={true} className="newsletter-slider">
-
-                        <div className="item-newsl">
-                                <img src={projImg1} alt="Image" className="img-fluid" />
-                                <h5>Web Development</h5>
-                                <p> text text text text text text text text
-                                text text text text text text text text text text
-                                text texttext text  <span>Ver mais</span>
-                                </p>
-                            </div>
-                            <div className="item-newsl">
-                                <img src={projImg2} alt="Image" className="img-fluid" />
-                                <h5>Brand Identity</h5>
-                                <p> text text text text text text text text
-                                text text text text text text text text text text
-                                text texttext text  <span>Ver mais</span>
-                                </p>
-                            </div>
-                            <div className="item-newsl">
-                                <img src={projImg3} alt="Image" className="img-fluid" />
-                                <h5>Logo Design</h5>
-                                <p> text text text text text text text text
-                                text text text text text text text text text text
-                                text texttext text  <span>Ver mais</span>
-                                </p>
-                            </div>
-                        </Carousel>
+                        <Carousel fade controls={true} indicators={true}>
+      <Carousel.Item>
+        <img src={noticia01} className="carousel-img-nl"/>
+        <Carousel.Caption className="text-carousel-nl">
+          <h3 >First slide label</h3>
+          <p >Nulla vitae elit libero, a pharetra augue mollis interdum  <button>ver mais</button>  .</p>
+          
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img src={noticia02} className="carousel-img-nl " />
+        <Carousel.Caption className="text-carousel-nl">
+          <h3>Second slide label</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img src={noticia03} className="carousel-img-nl" />
+        <Carousel.Caption className="text-carousel-nl">
+          <h3>Third slide label</h3>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+    
                         
                     </div>
                 </Col>

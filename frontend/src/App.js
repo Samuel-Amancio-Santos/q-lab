@@ -6,6 +6,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import DemoPage from './components/pages/DemoPage';
 import HomePage from './components/pages/HomePage';
 import NewsletterPage from './components/pages/NewsletterPage';
+import Login from './components/pages/Login';
+import Inscrição from './components/pages/Inscrição';
 
 
 function App() {
@@ -21,6 +23,9 @@ function App() {
           <Route path='/homepage' element={<HomePage />}></Route>
           <Route path='/demopage' element={<DemoPage />}></Route>
           <Route path='/newsletterpage' element={<NewsletterPage />}></Route>
+          <Route path='/login' element={<Login />}></Route>
+          <Route path='/inscrição' element={<Inscrição />}></Route>
+
         </Routes>
 
       </div>

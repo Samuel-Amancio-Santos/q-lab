@@ -2,7 +2,6 @@ import React from 'react';
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { atelierDuneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { Container, Row, Col, Nav, Tab } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button';
 import Fade from 'react-bootstrap/Fade';
 import { useState } from 'react';
 
