@@ -5,6 +5,8 @@ import noticia02 from "../../assets/img-qlab/noticia02.png";
 import noticia03 from "../../assets/img-qlab/noticia03.png";
 import { Container, Col, Row } from 'react-bootstrap';
 import colorSharp from "../../assets/img/color-sharp.png"
+import { Link } from 'react-router-dom';
+import LerNewsletter from '../pages/LerNewsletter';
 
 
 const NewsletterCards = () => {
@@ -23,7 +25,7 @@ const NewsletterCards = () => {
               Some quick example text to build on the card title and make up the
               bulk of the card's content. 
             </Card.Text>
-            <button>Ler mais</button>
+           <Link to="../LerNewsletter" ><button>Ler mais</button></Link> 
           </Card.Body>
         </Card>
       </Col>
@@ -37,7 +39,7 @@ const NewsletterCards = () => {
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </Card.Text>
-            <button>Ler mais</button>
+            <Link to="../LerNewsletter" ><button>Ler mais</button></Link> 
           </Card.Body>
         </Card>
       </Col>
@@ -51,7 +53,7 @@ const NewsletterCards = () => {
               Some quick example text to build on the card title and make up the
               bulk of the card's content.
             </Card.Text>
-            <button>Ler mais</button>
+            <Link to="../LerNewsletter" ><button>Ler mais</button></Link> 
           </Card.Body>
         </Card>
       </Col>

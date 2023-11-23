@@ -8,6 +8,7 @@ import HomePage from './components/pages/HomePage';
 import NewsletterPage from './components/pages/NewsletterPage';
 import Login from './components/pages/Login';
 import Inscrição from './components/pages/Inscrição';
+import LerNewsletter from './components/pages/LerNewsletter';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path='/newsletterpage' element={<NewsletterPage />}></Route>
           <Route path='/login' element={<Login />}></Route>
           <Route path='/inscrição' element={<Inscrição />}></Route>
+          <Route path='/lernewsletter' element={<LerNewsletter />}></Route>
 
         </Routes>
 

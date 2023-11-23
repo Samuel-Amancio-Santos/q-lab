@@ -22,7 +22,7 @@ export const Time = () => {
         <Row>
             <Col md={6} sm={6}>
                 <div className="item-timel">
-                    <img src={person1} alt="Image" className="img-fluid" />
+                    <img src={person1} alt="Image" className="person-img img-fluid" />
                     <h5>Ana Silva</h5>
                     <p> Engenheira de Software Quântico Sênior
                     </p>
@@ -30,7 +30,7 @@ export const Time = () => {
             </Col>
             <Col md={6} sm={6}>
                 <div className="item-time1">
-                    <img src={person2} alt="Image" className="img-fluid" />
+                    <img src={person2} alt="Image" className="person-img img-fluid" />
                     <h5>Sophia Oliveira</h5>
                     <p> Cientista de Dados Quânticos
                     </p>
@@ -40,7 +40,7 @@ export const Time = () => {
         <Row>
             <Col md={6} sm={6}>
                 <div className="item-time1">
-                    <img src={person3} alt="Image" className="img-fluid" />
+                    <img src={person3} alt="Image" className="person-img img-fluid" />
                     <h5>Lucas Santos</h5>
                     <p>  Desenvolvedor de Algoritmos Quânticos 
                     </p>
@@ -48,7 +48,7 @@ export const Time = () => {
             </Col>
             <Col md={6} sm={6}>
                 <div className="item-time1">
-                    <img src={person4} alt="Image" className="img-fluid" />
+                    <img src={person4} alt="Image" className="person-img img-fluid" />
                     <h5>Gabriel Costa</h5>
                     <p> Arquiteto de Sistemas Quânticos 
                     </p>

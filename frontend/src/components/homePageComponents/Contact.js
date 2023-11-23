@@ -5,9 +5,6 @@ import contactImg from "../../assets/img/contact-img.svg";
 export const Contact = () => {
     const formInitialDetails = {
         nome: '',
-        sobreNome: '',
-        email: '',
-        telefone: '',
         mensagem: ''
 
     }
@@ -32,22 +29,21 @@ export const Contact = () => {
                     </Col>
                     <Col md={6}>
                         <h2>Entre em Contato</h2>
-                        <form> 
+                        <form onSubmit={ () => {
+                           
+                            const mailto = 'contact@q-lab.com';
+                              const subject = "Mensagem de contato";
+                              const body = `Mensagem: ${formDetails.mensagem};%0D%0AYour Name: ${formDetails.nome}`;
+                              window.open(`mailto:${mailto}?subject=${subject}&body=${body}`);
+                        }}> 
                             <Row>
-                                <Col sm={6} className="px-1">
-                                    <input type="text" value={formDetails.nome} placeholder="Nome" onChange={(e) => onFormUpdate ('nome', e.target.value)} />
+                                <Col sm={12} className="px-1">
+                                    <input type="text" value={formDetails.nome} placeholder="Nome*" onChange={(e) => onFormUpdate ('nome', e.target.value)} />
                                 </Col>
-                                <Col sm={6} className="px-1">
-                                    <input type="text" value={formDetails.sobreNome} placeholder="Sobre nome" onChange={(e) => onFormUpdate ('sobreNome', e.target.value)} /> 
-                                </Col>
-                                <Col sm={6} className="px-1">
-                                    <input type="email" value={formDetails.email} placeholder="Email" onChange={(e) => onFormUpdate ('email', e.target.value)} /> 
-                                </Col>
-                                <Col sm={6} className="px-1">
-                                    <input type="tel" value={formDetails.telefone} placeholder="Telefone." onChange={(e) => onFormUpdate ('telefone', e.target.value)} /> 
-                                </Col>
-                                <Col>
-                                    <textarea row="6" value={formDetails.mensagem} placeholder="Mensagem" onChange={(e) => onFormUpdate ('mensagem', e.target.value)}></textarea>
+
+
+                                <Col className="px-1">
+                                    <textarea row="6" value={formDetails.mensagem} placeholder="Mensagem*" onChange={(e) => onFormUpdate ('mensagem', e.target.value)}></textarea>
                                     <button type="submit"><span>{buttonText}</span></button>
                                 </Col>
                                 {

@@ -18,30 +18,30 @@ export const Newsletter = () => {
                     <div className="newsletter-bx">
 
                         <h2>
-                            Newslatter
+                            Newsletter
                         </h2>
                         <Carousel fade controls={true} indicators={true}>
       <Carousel.Item>
         <img src={noticia01} className="carousel-img-nl"/>
-        <Carousel.Caption className="text-carousel-nl">
+        <Carousel.Caption >
           <h3 >First slide label</h3>
-          <p >Nulla vitae elit libero, a pharetra augue mollis interdum  <button>ver mais</button>  .</p>
+          <p > augue mollis interdum  <button>ver mais</button>  .</p>
           
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img src={noticia02} className="carousel-img-nl " />
-        <Carousel.Caption className="text-carousel-nl">
+        <Carousel.Caption >
           <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Lorem ipsum dolor sit amet,<button>ver mais</button> .</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img src={noticia03} className="carousel-img-nl" />
-        <Carousel.Caption className="text-carousel-nl">
+        <Carousel.Caption >
           <h3>Third slide label</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            Praesent commodo <button>ver mais</button>
           </p>
         </Carousel.Caption>
       </Carousel.Item>

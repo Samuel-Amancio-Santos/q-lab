@@ -4,24 +4,34 @@ import "react-multi-carousel/lib/styles.css";
 import colorSharp from '../../assets/img/color-sharp.png'
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { atelierDuneDark } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import {ArrowRightCircle} from 'react-bootstrap-icons'
 
 export const Demostracao = () => {
 
-  const codeString = `
-  #imports
+  const codeString = `#imports
+from braket.circuits import Circuit
+from braket.aws import AwsDevice
+    
+#hello many worlds
+  
+circ = Circuit()
+  
+circ.h(1)
+  
+circ.cnot(control=1, target=0)`;
 
-  from braket.circuits import Circuit
+
+  const Qiskit = `#hello many worlds
+qc = QuantumCircuit(2, 2)
+qc.h(0)
   
-  from braket.aws import AwsDevice
+qc.cx(0, 1)
   
+qc.measure([0, 1],[0, 1])
   
-  #hello many worlds
+#run on IonQ hardware
   
-  circ = Circuit()
-  
-  circ.h(1)
-  
-  circ.cnot(control=1, target=0)`;
+ionq = provider.get_backend("qlab_simulator")`;
 
     const responsive = {
         superLargeDesktop: {
@@ -48,12 +58,12 @@ export const Demostracao = () => {
             <Container>
                 <Row>
                     <Col>
-                        <div className="skill-bx">
+                        <div className="skill-bx text-center">
 
                             <h2>
                                 Demostrações
                             </h2>
-                            <p>orem Ipsum is simply dummy text of the printing <br></br> orem Ipsum is simply dummy text of the printing and typesetting industr and typesetting industr, orem Ipsum is simply </p>
+                            <p>Desvende o potencial da computação quântica através das nossas demonstrações interativas. Explore algoritmos, qubits e entrelaçamento, proporcionando uma experiência cativante e educativa para entusiastas, estudantes e profissionais em busca de insights no mundo quântico. </p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
                                 <SyntaxHighlighter className="codeDemo"
@@ -68,30 +78,17 @@ export const Demostracao = () => {
                              language="python"
                              style={atelierDuneDark}
                                showLineNumbers  >
-                               {codeString}
-                           </SyntaxHighlighter>
-                                </div>
-                                <div className="item">
-                                <SyntaxHighlighter className="codeDemo"
-                             language="python"
-                             style={atelierDuneDark}
-                               showLineNumbers  >
-                               {codeString}
-                           </SyntaxHighlighter>
-                                </div>
-                                <div className="item">
-                                <SyntaxHighlighter className="codeDemo"
-                             language="python"
-                             style={atelierDuneDark}
-                               showLineNumbers  >
-                               {codeString}
+                               {Qiskit}
                            </SyntaxHighlighter>
                                 </div>
 
                             </Carousel>
+
+                            <a href="../DemoPage"> <button>Demostrações <ArrowRightCircle size={35} className="seta" /> </button> </a>
                         </div>
                     </Col>
                 </Row>
+                
             </Container>
             <img className="background-image-left" src={colorSharp} />
         </section>
