@@ -9,6 +9,8 @@ import NewsletterPage from './components/pages/NewsletterPage';
 import Login from './components/pages/Login';
 import Inscrição from './components/pages/Inscrição';
 import LerNewsletter from './components/pages/LerNewsletter';
+import Teste from './components/pages/Teste.js';
+
 
 
 function App() {
@@ -27,6 +29,7 @@ function App() {
           <Route path='/login' element={<Login />}></Route>
           <Route path='/inscrição' element={<Inscrição />}></Route>
           <Route path='/lernewsletter' element={<LerNewsletter />}></Route>
+          <Route path='/teste' element={<Teste />}></Route>
 
         </Routes>
 
