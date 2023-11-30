@@ -146,7 +146,7 @@
     transition: 1s;
     margin-top: 40px;
   }
-  .login_entrar a {
+  .login_entrar input {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -168,7 +168,7 @@
         display: none;
     }
 
-    .login_entrar a {
+    .login_entrar input {
       position: absolute;
       width: 80%;
       height: 90%;

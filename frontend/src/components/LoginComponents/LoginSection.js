@@ -1,24 +1,30 @@
 import { Container, Row, Col, Form,} from 'react-bootstrap';
-import React, { useState } from "react";
+import { useState, useContext } from "react";
 import contactImg from "../../assets/img/contact-img.svg";
 import Footer from '../Footer';
-import { Link } from "react-router-dom";
+import Input from '../form/input';
+
+//context teste
+import { Context } from '../context/UserContext';
+import { Link } from 'react-router-dom'
 
 
 export const LoginSection = () => {
-    const [email, setEmail] = useState('');
-    const [senha, setSenha] = useState('');
-  
-    const handleLogin = (e) => {
-      e.preventDefault();
-      // Adicione aqui a lógica de autenticação, por exemplo, verificar se o usuário e a senha são válidos.
-      // Você pode usar uma API, autenticar no servidor, ou qualquer outra lógica necessária.
-      // Aqui, estou apenas exibindo os valores do usuário e senha para fins de demonstração.
-      console.log('Email:', email);
-      console.log('Senha:', senha);
-    };
-    
+  const [user, setUser] = useState({})
+  const {login} = useContext(Context);
 
+    function handleChange(e){
+
+      setUser({...user, [e.target.name]: e.target.value});
+      console.log(user)
+
+    }
+
+    function handleSubmit(e){
+        e.preventDefault();
+        login(user);
+    }
+    
       return (
    
   <section className='login' style={{ minHeight: '100vh' }} >
@@ -32,32 +38,19 @@ export const LoginSection = () => {
                 <div className="login_form">
                   <h2 className="text-center">Login</h2>
 
-                  <Form onSubmit={handleLogin}>
+                  <Form onSubmit={handleSubmit}>
                     <Form.Group  controlId="formBasicEmail">
-                    <input
-                      type="email"
-                      placeholder="Email"
-                      class="input_text"
-                      autocomplete="off"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                    />
+
+                    <Input className="input_text" text="E-mail" type="email" name="email" placeholder="Digite o seu email" handleOnChange={handleChange}></Input>
                     </Form.Group>
                     <Form.Group  controlId="formBasicSenha">
-                    <input
-                    type="senha"
-                    placeholder="Senha"
-                    class="input_text"
-                    autocomplete="off"
-                    value={senha}
-                    onChange={(e) => setSenha(e.target.value)}
-                    />
+
+                    <Input className="input_text" text="Senha" type="password" name="password" placeholder="Digite a sua senha" handleOnChange={handleChange} ></Input>
                     </Form.Group>
                     
                   <div className="login_entrar">      
-                  <a href="./homepage" className="text-decoration-none" id="login_button">
-                  Entrar
-                  </a>
+
+                  <input type="submit" value = "Entrar" className="text-decoration-none" id="login_button"/>
                   </div>
                   </Form>
                   

@@ -1,26 +1,30 @@
-import React, { useState } from "react";
+import { useState, useContext } from "react";
 import { Container, Row, Col, Form } from 'react-bootstrap';
 import contactImg from "../../assets/img/contact-img.svg";
 import Footer from "../Footer";
 
+import Input from '../form/input';
+
+// Context
+import { Context } from '../context/UserContext';
+
 export const InscriçãoComp = () => {
-  const [nome, setNome] = useState('');
-  const [telefone, setTelefone] = useState('');
-  const [email, setEmail] = useState('');
-  const [senha, setSenha] = useState('');
-  const [confirmSenha, setConfirmSenha] = useState('');
+  const [user, setUser] = useState({});
+  const {register} = useContext(Context);
 
-  const handleLogin = (e) => {
-    e.preventDefault();
-    // Add your authentication logic here, for example, checking if the user and password are valid.
-    // For demonstration purposes, I'm just logging the values for now.
-    console.log('Nome:', nome);
-    console.log('Telefone:', telefone);
-    console.log('Email:', email);
-    console.log('Senha:', senha);
-    console.log('Confirmar Senha:', confirmSenha);
-  };
+  function handleChange(e){
 
+      setUser({...user, [e.target.name]: e.target.value})
+
+  }
+
+  function handleSubmit(e) {
+
+      e.preventDefault();
+
+      //enviar o usuario para o banco
+      register(user)
+  }
   return (
     <>
     <div className="AppI"  style={{ minHeight: '100vh' }}>
@@ -33,61 +37,35 @@ export const InscriçãoComp = () => {
             <div className="login_form_containerI">
               <div className="login_formI">
                 <h2 className="text-centerI">Inscrição</h2>
-                <Form onSubmit={handleLogin}>
+                <Form onSubmit={handleSubmit}>
                   <Form.Group className="mb-1" controlId="formBasicNome">
-                    <input
-                      type="text"
-                      placeholder="Nome"
-                      className="input_textI"
-                      autoComplete="off"
-                      value={nome}
-                      onChange={(e) => setNome(e.target.value)}
-                    />
+
+                     <Input className="input_textI" text="Nome" type="text" name = "name" placeholder = "Digite o Seu Nome" handleOnChange={handleChange}></Input>
                   </Form.Group>
                   <Form.Group className="mb-1" controlId="formBasicTelefone">
-                    <input
-                      type="tel"
-                      placeholder="Telefone"
-                      className="input_textI"
-                      autoComplete="off"
-                      value={telefone}
-                      onChange={(e) => setTelefone(e.target.value)}
-                    />
+
+                    <Input className="input_textI" text="Telefone" type="text" name = "phone" placeholder = "Digite o Seu Telefone" handleOnChange={handleChange}></Input>
+
+                   
                   </Form.Group>
                   <Form.Group className="mb-1" controlId="formBasicEmail">
-                    <input
-                      type="email"
-                      placeholder="Email"
-                      className="input_textI"
-                      autoComplete="off"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                    />
+
+                    <Input className="input_textI" text="E-mail" type="email" name = "email" placeholder = "Digite o Seu e-mail" handleOnChange={handleChange}></Input>
+
                   </Form.Group>
                   <Form.Group className="mb-1" controlId="formBasicSenha">
-                    <input
-                      type="password"
-                      placeholder="Senha"
-                      className="input_textI"
-                      autoComplete="off"
-                      value={senha}
-                      onChange={(e) => setSenha(e.target.value)}
-                    />
+
+                      <Input className="input_textI" text="Senha" type="password" name = "password" placeholder = "Digite a Sua Senha" handleOnChange={handleChange}></Input>
+
                   </Form.Group>
                   <Form.Group className="mb-1" controlId="formBasicConfirmSenha">
-                    <input
-                      type="password"
-                      placeholder="Confirmar Senha"
-                      className="input_textI"
-                      autoComplete="off"
-                      value={confirmSenha}
-                      onChange={(e) => setConfirmSenha(e.target.value)}
-                    />
+
+                      <Input className="input_textI" text="Confirmação de Senha" type="password" name = "confirmpassword" placeholder = "Confirme a Sua Senha" handleOnChange={handleChange}></Input>
+
                   </Form.Group>
                   <div className="login_entrarI">     
-                  <a href="./login" className="text-decoration-none" id="login_button">
-                  Concluído
-                  </a>
+
+                   <input type="submit" value = "Cadastrar" className="text-decoration-none" id="login_button"/>
                   </div>
                 </Form>
               </div>

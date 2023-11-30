@@ -4,7 +4,11 @@ import noticia01 from "../../assets/img-qlab/noticia01.png";
 import Footer from "../Footer"
 import NewsletterCards from "../NewsletterComponents/NewsletterCards"
 
+/* hooks */
+
 const LerNewsletter = () => {
+
+
     return (
         <>
         <section className="lerNewsletter" style={{ minHeight: '100vh' }} >
@@ -13,15 +17,11 @@ const LerNewsletter = () => {
                 <Col>
                     <div className="lerNewsletter-bx">
                         <h2>
-                            Titulo da noticia
+                            🔮 Revelação Científica: Visualização da Entrelaçamento Quântico! 🔮
                         </h2>
 
                         <p>
-                            informaçoes da noticias Lorem ipsum amet is a great text
-                            Lorem ipsum amet is a great text
-                            Lorem ipsum amet is a great text
-                            Lorem ipsum amet is a great text
-                            Lorem ipsum amet is a great text
+                          Sua noticia 
                         </p>
                     </div>
                 </Col>

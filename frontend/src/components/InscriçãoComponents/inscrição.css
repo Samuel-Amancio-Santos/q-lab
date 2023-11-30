@@ -21,7 +21,7 @@
     transition: 1s;
     margin-top: 30px;
   }
-  .login_entrarI a {
+  .login_entrarI input {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -41,7 +41,7 @@
 
   @media only screen and (max-width: 400px) {
  
-    .login_entrarI a {
+    .login_entrarI input {
         position: absolute;
         width: 80%;
         height: 100%;

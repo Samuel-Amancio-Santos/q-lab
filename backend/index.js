@@ -1,6 +1,7 @@
 import express  from 'express';
 import cors from 'cors';
 import UserRoutes from "./routes/UserRoutes.js";
+import NewsRoutes from "./routes/newsRouter.js";
 import coon from './db/coon.js' 
 
 coon();
@@ -23,6 +24,8 @@ app.use(
 //Routes 
 
 app.use('/users', UserRoutes);
+
+app.use('/newsletters', NewsRoutes); 
 
 app.listen(5000, function(){
     console.log("Servidor Online!!");
