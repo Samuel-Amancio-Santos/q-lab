@@ -1,8 +1,8 @@
-import express  from 'express';
-import cors from 'cors';
+import express from "express";
+import cors from "cors";
 import UserRoutes from "./routes/UserRoutes.js";
 import NewsRoutes from "./routes/newsRouter.js";
-import coon from './db/coon.js' 
+import coon from "./db/coon.js";
 
 coon();
 
@@ -14,19 +14,20 @@ app.use(express.json());
 
 //solve cors
 app.use(
-    cors({
-      origin: process.env.FRONTEND_URL || "http://localhost:3000"
-    })
-  );
+  cors({
+    // origin: process.env.FRONTEND_URL || "http://localhost:3000"
+    origin: "*",
+  })
+);
 
 //public folder for images ;
 
-//Routes 
+//Routes
 
-app.use('/users', UserRoutes);
+app.use("/users", UserRoutes);
 
-app.use('/newsletters', NewsRoutes); 
+app.use("/newsletters", NewsRoutes);
 
-app.listen(5000, function(){
-    console.log("Servidor Online!!");
+app.listen(5000, function () {
+  console.log("Servidor Online!!");
 });
