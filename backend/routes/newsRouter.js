@@ -10,6 +10,7 @@ router.route('/create')
 .get((req, res) => newsletterController.createNewsletter(req, res));
 
 
+
 router.route('/create')
 .post((req, res) => newsletterController.create(req, res));
 
