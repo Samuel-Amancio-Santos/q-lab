@@ -57,5 +57,5 @@ You can now view q-lab in the browser.
 
 
 
-5- Tudo feito e funcional, nós do squad 22 agradecemos ! boas festas e bom final de ano !!
+5- Tudo pronto e funcional, nós do squad 22 agradecemos ! boas festas e bom final de ano !!
 
