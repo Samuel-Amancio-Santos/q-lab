@@ -33,16 +33,16 @@ const DemoSection = () => {
   
   #run on Q-LAB hardware
   
-  qlab = AwsDevice("arn:aws:braket:::device/qpu/ionq/qlaBdevice")
+  qlab = AwsDevice("arn:aws:braket:::device/qpu/qlab/qlaBdevice")
   
-  job = ionq.run(circ, ("my_s3_bucket","my_s3_folder"), shots=100)
+  job = qlab.run(circ, ("my_s3_bucket","my_s3_folder"), shots=100)
   
   print(job.result().measurement_counts)  
 `;
 
 const qskit = `#imports
 
-from qiskit_ionq import IonQProvider
+from qiskit_qlab import QlaBProvider
 
 from qiskit import QuantumCircuit
 
@@ -58,11 +58,11 @@ qc.cx(0, 1)
 qc.measure([0, 1],[0, 1])
 
 
-#run on IonQ hardware
+#run on Q-LAB hardware
 
-ionq = provider.get_backend("qlab_simulator")
+qlab = provider.get_backend("qlab_simulator")
 
-job = ionq.run(qc, shots=100)
+job = qlab.run(qc, shots=100)
 
 print(job.get_counts())`;
 
