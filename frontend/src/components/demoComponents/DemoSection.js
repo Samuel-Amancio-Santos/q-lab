@@ -105,7 +105,7 @@ print(job.histogram(key="x"))`
           <Col size={12}>
               <div className="animate__animated animate__fadeIn">
                 <h2>Demostrações</h2>
-                <p>Desvende o potencial da computação quântica através das nossas demonstrações interativas. Explore algoritmos, qubits e entrelaçamento, proporcionando uma experiência cativante e educativa para entusiastas, estudantes e profissionais em busca de insights no mundo quântico.</p>
+                <p>Desvende o potencial da computação quântica através das nossas demonstrações. Explore algoritmos, qubits e entrelaçamento, proporcionando uma experiência cativante e educativa para entusiastas, estudantes e profissionais em busca de insights no mundo quântico.</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>

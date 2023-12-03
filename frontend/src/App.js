@@ -31,7 +31,7 @@ function App() {
             <Route path="/login" element={<Login />}></Route>
             <Route path="/inscrição" element={<Inscrição />}></Route>
             <Route path="/newsletterpage/:id" element={<LerNewsletter />}></Route>
-            <Route path="/teste" element={<Teste />}></Route>
+            
           </Routes>
         </div>
       </UserProvider>

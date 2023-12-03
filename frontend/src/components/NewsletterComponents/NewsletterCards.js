@@ -1,12 +1,8 @@
-import Button from "react-bootstrap/Button";
+
 import Card from "react-bootstrap/Card";
-import noticia01 from "../../assets/img-qlab/noticia01.png";
-import noticia02 from "../../assets/img-qlab/noticia02.png";
-import noticia03 from "../../assets/img-qlab/noticia03.png";
 import { Container, Col, Row } from "react-bootstrap";
-import colorSharp from "../../assets/img/color-sharp.png";
 import { Link } from "react-router-dom";
-import LerNewsletter from "../pages/LerNewsletter";
+
 
 import api from "../utils/api";
 import { useState, useEffect } from "react";
@@ -16,7 +12,8 @@ const NewsletterCards = () => {
 
   useEffect(() => {
     api.get("/newsletters").then((response) => {
-      setNewsletters(response.data.newsletters);
+      setNewsletters(response.data.newsletters)
+      console.log(newsletters)
     });
   }, []);
 
@@ -35,9 +32,9 @@ const NewsletterCards = () => {
                   <Card.Img variant="top" src={newsletter.image} />
                   <Card.Body>
                     <Card.Title>{newsletter.title}</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
+                    <Card.Text>  {newsletter.description.length > 100
+                     ? `${newsletter.description.substring(0, 100)}...`
+                      : newsletter.description}
                     </Card.Text>
                     <Link to={`${newsletter._id}`}><button>Ler Mais</button></Link>
                   </Card.Body>
