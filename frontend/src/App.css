@@ -602,3 +602,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .social-iconFooter2 {
   margin-top: 20px;
 }
+
+
+.descrip {
+  text-align: start;
+  letter-spacing: 1px;
+  padding-top: 50px;
+}

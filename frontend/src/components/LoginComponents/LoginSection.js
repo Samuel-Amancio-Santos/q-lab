@@ -1,12 +1,12 @@
 import { Container, Row, Col, Form,} from 'react-bootstrap';
 import { useState, useContext } from "react";
 import contactImg from "../../assets/img/contact-img.svg";
-import Footer from '../Footer';
+
 import Input from '../form/input';
 
 //context teste
 import { Context } from '../context/UserContext';
-import { Link } from 'react-router-dom'
+
 
 
 export const LoginSection = () => {

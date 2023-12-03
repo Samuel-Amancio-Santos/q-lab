@@ -1,7 +1,4 @@
 import { Col, Container, Row } from "react-bootstrap";
-import noticia01 from "../../assets/img-qlab/noticia01.png";
-import noticia02 from "../../assets/img-qlab/noticia02.png";
-import noticia03 from "../../assets/img-qlab/noticia03.png";
 import Carousel from "react-bootstrap/Carousel";
 
 import api from "../utils/api";

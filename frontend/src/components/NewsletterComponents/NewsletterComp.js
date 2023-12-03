@@ -1,6 +1,5 @@
 import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
-import noticia01 from "../../assets/img-qlab/noticia01.png";
 import noticia02 from "../../assets/img-qlab/noticia02.png";
 import noticia07 from "../../assets/img-qlab/noticia07.png";
 

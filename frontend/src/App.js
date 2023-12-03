@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+
 import "./App.css";
 import { NavBar } from "./components/NavBar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -9,7 +9,6 @@ import NewsletterPage from "./components/pages/NewsletterPage";
 import Login from "./components/pages/Login";
 import Inscrição from "./components/pages/Inscrição";
 import LerNewsletter from "./components/pages/LerNewsletter";
-import Teste from "./components/pages/Teste.js";
 
 import Message from "./components/layout/Message";
 

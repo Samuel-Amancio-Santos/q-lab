@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Footer from "../Footer";
-import api from "../utils/api"; // Certifique-se de importar o axios ou a biblioteca que você está usando para fazer solicitações HTTP
+import api from "../utils/api"; 
 import { useParams } from "react-router-dom";
 
 
@@ -30,7 +30,7 @@ api.get(`/newsletters/${id}`).then((response) => {
                         </h2>
                         
                           
-                        <p className="text-align-start">
+                        <p className="descrip">
                               {newsletters.description}
                         </p>
                     </div>

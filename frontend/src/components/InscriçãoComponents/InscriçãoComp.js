@@ -1,7 +1,7 @@
 import { useState, useContext } from "react";
 import { Container, Row, Col, Form } from 'react-bootstrap';
 import contactImg from "../../assets/img/contact-img.svg";
-import Footer from "../Footer";
+
 
 import Input from '../form/input';
 
