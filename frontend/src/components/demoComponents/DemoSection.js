@@ -182,7 +182,7 @@ print(job.histogram(key="x"))`
                              language="python"
                              style={atelierDuneDark}
                                showLineNumbers  >
-                               {codeString}
+                               {Cirq}
                            </SyntaxHighlighter>
                     <Container className='demo-info-bx'>
                            <button 
