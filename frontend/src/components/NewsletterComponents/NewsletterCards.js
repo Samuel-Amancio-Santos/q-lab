@@ -13,7 +13,6 @@ const NewsletterCards = () => {
   useEffect(() => {
     api.get("/newsletters").then((response) => {
       setNewsletters(response.data.newsletters)
-      console.log(newsletters)
     });
   }, []);
 
