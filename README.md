@@ -1,11 +1,11 @@
 Iniciando o projeto pela primeira vez
-é necessario o clone do projeto que esta no github em uma pasta de sua preferencia, como por Exemplo: "SUA_PASTA".
+
+Extraia a pasta q-lab em uma pasta de sua preferencia Ex: "SUA_PASTA".
 
 Na primeira vez que for iniciar o projeto é necessário instalar o pacotes npm em duas pastas, uma em backend, e outra em frontend.
 
 Para fazer isso: 
 
-Apos o projeto clonado em "SUA_PASTA"
 
 1- Abra um terminal, seja Linux, CMD, PowerShell;
 
@@ -15,7 +15,10 @@ Apos o projeto clonado em "SUA_PASTA"
 
 4- apos entrar na pasta backend digite o comando: npm install.
 
-5 - apos as instalações dos pacotes na pasta backend iremos instalar na pasta frontend, o processo é o mesmo.
+5 - apos as instalações dos pacotes na pasta backend iremos inicia o backend digitando npm start.
+
+
+INSTALAÇÃO NA PASTA "frontend"
 
 Para fazer isso: 
 
@@ -31,31 +34,8 @@ Para fazer isso:
 
 6- ainda em "SUA_PASTA/ResidenciaPorto/q-lab/frontend" digite o comando: npm install axios.
 
-7- tudo pronto, agora só iniciar o projeto localmente.
-
-8- para iniciar o projeto localmente precisara iniciar tanto em backend como em frontend.
-
-Para fazer isso:
-
-1- Com o terminal ainda aberto, vá para "SUA_PASTA/ResidenciaPorto/q-lab/backend"
-
-2- digite o comando npm start. após isso aparecessa a mensagem "Servidor Online!! Conectado ao banco!!" 
-
-3- agora va para pasta frontend e faça o mesmo. em "SUA_PASTA/ResidenciaPorto/q-lab/frontend": digite o comando npm start.
-
-4- feito o comando start em frontend, aparecerá esta mensagem
+7- tudo pronto, agora só iniciar o projeto localmente. Ainda na pasta digite npm start
 
 
-Compiled successfully!
-
-You can now view q-lab in the browser.
-
-  Local:            http://localhost:3000        
-  On Your Network:  http://192.168.3.12:3000
-
-
-
-
-
-5- Tudo pronto e funcional, nós do squad 22 agradecemos ! boas festas e bom final de ano !!
+8- Tudo pronto e funcional, nós do squad 22 agradecemos ! boas festas e bom final de ano !!
 
