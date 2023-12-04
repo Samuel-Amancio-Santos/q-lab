@@ -29,7 +29,6 @@ api.get(`/newsletters/${id}`).then((response) => {
                             {newsletters.title}
                         </h2>
                         
-                          
                         <p className="descrip">
                               {newsletters.description}
                         </p>
